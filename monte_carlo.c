@@ -42,8 +42,8 @@ float mc_pi(int n){
     float x,y,d;
     int count=0;
     for(int i=0; i<=n; i++){
-        x = -1 + 2* rand()/RAND_MAX;
-        y= -1 + 2*rand()/RAND_MAX;
+        x = -1 + 2*frandom();
+        y= -1 + 2*frandom();
         d = pow((x*x + y*y),0.5);
 
         if(d<=1){
